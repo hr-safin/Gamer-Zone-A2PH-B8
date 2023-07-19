@@ -20,19 +20,17 @@ body {
 }
 
 .nav-container {
-  border: 1px solid red;
   display: flex;
   min-height: 100px;
   align-items: center;
   width: 90vw;
   margin: 0 auto;
-  padding-left: 60px;
+  padding-left: 70px;
   padding-right: 70px;
 }
 
 .logo-content {
   display: flex;
-
   width: 50%;
   align-items: center;
 }
@@ -96,32 +94,19 @@ body {
 }
 
 /*home section  */
-.parent {
-    background-image: url("./images/Group 14.png");
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
 .home-container {
-  border: 1px solid red;
   width: 90vw;
   margin: 0px auto 0;
   min-height: 50px;
   padding-left: 70px;
   padding-right: 70px;
   display: flex;
-  /* align-items: center; */
-  /* background-image: url("./images/Group 14.png");
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: contain; */
 }
 
 .left {
   width: 50%;
-  border: 1px solid black;
   padding-top: 90px;
-  
 }
 
 .left-title {
@@ -134,7 +119,6 @@ body {
 
 .right {
   width: 50%;
-  border: 1px solid blue;
 }
 
 .right img {
@@ -191,6 +175,70 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+
+/* online card section */
+
+section .h2 {
+  text-align: center;
+  color: #0b0223;
+  font-size: 34px;
+  margin-top: 70px;
+  font-weight: 700;
+}
+
+.funny {
+  color: #8758f1;
+}
+
+section .p {
+  padding-top: 12px;
+  padding-bottom: 30px;
+  color: #534c64;
+  text-align: center;
+  font-family: Work Sans;
+  font-size:15px;
+  font-weight: 400;
+  
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 90vw;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .card-body{
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: black;
+} */
+
+.card p {
+  padding-top: 10px;
+  color: #534c64;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 /* Mobile responsive */
 
 @media screen and (max-width: 426px) {
@@ -212,57 +260,90 @@ body {
     margin-top: 40px;
   }
 
-  .logo-content{
+  .logo-content {
     padding: 0px;
   }
 
+  .logo-content img {
+    width: 55px;
+    margin: 0 8px 0 0;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
   /* home */
-  .home-container{
+  .home-container {
     flex-direction: column-reverse;
     padding: 20px;
   }
 
-  .left, .right{
+  .logo-content {
+  }
+
+  .left,
+  .right {
     width: 100%;
-    
   }
 
-  .left-title{
+  .left-title {
     font-size: 32px;
-    
   }
 
-  .goat{
+  .left {
+    padding-top: 20px;
+  }
+
+  .goat {
     font-size: 55px;
   }
 
-  .list1, .list2 , .list3{
+  .list1,
+  .list2,
+  .list3 {
     font-size: 15px;
   }
 
-  .bt1{
+  .bt1 {
     margin-right: 6px;
   }
 
-  .right img{
+  .right img {
     width: 100%;
   }
+
+  /* online  */
+
+  .card-container{
+     grid-template-columns: 1fr;
+     padding: 30px;
+  }
+
+  section .h2{
+    font-size: 24px;
+  }
+
+  section .p{
+   font-size: 11px;
+  }
+
+  .card p{
+    font-size: 11px;
+  }
+
+
 }
 
-@media screen and (min-width: 425px) and (max-width: 769px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
     padding: 30px;
-    align-items: center;
   }
-
-  /* .logo-content{
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        padding-left: 60px;
-        padding-right: 60px;
-    } */
+  .logo-content {
+    width: 30%;
+    margin: 0 auto;
+  }
 
   .menu-container {
     flex-direction: column;
@@ -276,37 +357,49 @@ body {
   .btn {
     margin-top: 40px;
   }
-  .home-container{
+  .home-container {
     flex-direction: column-reverse;
     padding: 20px;
   }
 
-  .left, .right{
+  .left,
+  .right {
     width: 100%;
     text-align: center;
   }
 
-  .left-title{
+  .left-title {
     font-size: 32px;
-    
-    
+    text-align: center;
   }
 
-  
-
-  .goat{
+  .goat {
     font-size: 55px;
+    text-align: center;
   }
 
-  .list1, .list2 , .list3{
+  .list1,
+  .list2,
+  .list3 {
     font-size: 15px;
   }
 
-  .bt1{
+  .bt1 {
     margin-right: 6px;
   }
 
-  .right img{
+  .right img {
     width: 100%;
+  }
+
+  /* online */
+
+  .card-container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+
+  .h2{
+    font-size: 30px;
   }
 }
