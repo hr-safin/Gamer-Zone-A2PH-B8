@@ -215,23 +215,83 @@ section .p {
   align-items: center;
   padding: 10px;
   text-align: left;
+  cursor: pointer;
+  object-fit: cover;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .card img {
   max-width: 100%;
   height: auto;
+  border: 4px solid white;
+  border-radius: 18px;
 }
 
-/* .card-body{
+.card1 img {
   max-width: 100%;
-  max-height: 100%;
-  top: 0;
-  bottom: 0;
+  height: auto;
+  
+}
+
+.card-body {
+  width: 92.6%;
+  height: 83.9%;
+  top: 10px;
+  right: -94% ;
   position: absolute;
-  background-color: black;
-} */
+  background-color: rgba(0, 0, 0, 0.532);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+  
+}
+
+/* card1 hover */
+
+.card1:hover .card-body{
+   right: 12px;
+}
+
+/* card hover */
+
+.card img:hover{
+  border: 4px solid #ff42a5;
+}
+
+.ss {
+  color: #ff42a5;
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+
+}
+
+.playbutton {
+  font-size: 35px;
+  color: white;
+}
 
 .card p {
+  padding-top: 10px;
+  color: #534c64;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card1 .p3 {
   padding-top: 10px;
   color: #534c64;
   font-size: 14px;
@@ -344,12 +404,12 @@ section .p {
   margin: 0 auto;
 }
 
- #toggl2 {
+#toggl2 {
   border: 2px solid #ff42a5;
   cursor: pointer;
-  
 }
-.toggle, #toggl2 p{
+.toggle,
+#toggl2 p {
   color: #ff42a5;
 }
 
@@ -494,10 +554,13 @@ section .p {
   .left,
   .right {
     width: 100%;
+    
   }
+  
 
   .left-title {
     font-size: 32px;
+    
   }
 
   .left {
@@ -598,7 +661,6 @@ section .p {
     gap: 5px;
   }
 
-
   .toggle {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -666,6 +728,14 @@ section .p {
     font-size: 12px;
     font-weight: 500;
     width: 180px;
+  }
+
+  .card-body{
+    height: 88.4%;
+  }
+
+  .card1 .card-body:hover{
+
   }
 }
 
@@ -782,19 +852,18 @@ section .p {
 
   /* toggle */
 
-  .little-card{
+  .little-card {
     padding: 40px;
   }
 
-  .top-1{
+  .top-1 {
     flex-wrap: wrap;
     padding: 10px;
     margin-bottom: 10px;
     align-items: center;
-    
   }
 
-  .toggle{
+  .toggle {
     width: auto;
   }
 }
