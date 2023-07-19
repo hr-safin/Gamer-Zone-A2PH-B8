@@ -303,9 +303,7 @@ section .p {
 .play-game {
   width: 90vw;
   align-items: center;
-  height: vh;
   margin: auto;
-  border: 1px solid black;
   display: flex;
   padding-left: 70px;
   padding-right: 70px;
@@ -315,14 +313,12 @@ section .p {
 
 .play-game-content {
   width: 50%;
-  border: 1px solid brown;
   margin-left: 100px;
   text-align: right;
 }
 
 .play-game-image {
   width: 50%;
-  border: 1px solid brown;
   position: relative;
   margin-left: 220px;
 }
@@ -344,12 +340,11 @@ section .p {
   font-size: 38px;
   font-weight: 700;
   width: 450px;
-  border: 1px solid red;
   margin-bottom: 15px;
 }
 
 .play-diff {
-  color: #ff42a5;
+  color: #8758f1;
 }
 
 .p2 {
@@ -358,7 +353,7 @@ section .p {
   width: 450px;
   font-size: 18px;
   font-weight: 400;
-  border: 1px solid red;
+ 
 }
 
 /* toogle button */
@@ -372,7 +367,6 @@ section .p {
 .little-card {
   /* grid-template-columns: repeat(5, 1fr); */
   width: 93vw;
-  border: 1px solid black;
   margin: 0 auto;
   align-items: center;
   padding-left: 100px;
@@ -388,13 +382,13 @@ section .p {
   flex-wrap: wrap;
   gap: 15px;
   padding: 20px;
-  border: 1px solid rgb(72, 0, 255);
+  
 }
 
 .toggle {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   border-radius: 50px;
   background: #fff;
   color: black;
@@ -449,11 +443,17 @@ section .p {
 .foot-logo {
   display: flex;
   padding-bottom: 30px;
+  align-items: center;
 }
 
 .logo2 {
   font-size: 35px;
   font-weight: 700;
+}
+
+.foot-L{
+  height: 35px;
+  object-fit: cover;
 }
 
 .logo2 .diff-color {
@@ -556,7 +556,7 @@ section .p {
     width: 100%;
     
   }
-  
+
 
   .left-title {
     font-size: 32px;
@@ -565,6 +565,10 @@ section .p {
 
   .left {
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    margin-top: 50px;
+    
   }
 
   .goat {
@@ -641,8 +645,8 @@ section .p {
 
   .doll {
     width: 130px;
-    top: 240px;
-    right: 230px;
+    top: 210px;
+    right: 220px;
   }
 
   .little-card {
@@ -667,7 +671,7 @@ section .p {
     padding: 3px;
     width: auto;
     height: auto;
-    margin-right: 5px;
+    margin-right: 1px;
   }
 
   .toggle p {
@@ -714,12 +718,18 @@ section .p {
     justify-content: center;
     padding-left: 50px;
     padding-right: 40px;
+    align-items: center;
   }
 
   .foot-sub a {
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 25px;
+    text-align: center;
     font-size: 12px;
+  }
+
+  .foot-sub , .rightA{
+   padding-right: 35px;
   }
 
   .copy-write {
@@ -738,6 +748,8 @@ section .p {
 
   }
 }
+
+/* medium device */
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .nav-container {
@@ -769,17 +781,23 @@ section .p {
   .left,
   .right {
     width: 100%;
-    text-align: center;
+    
+  }
+  .left{
+    padding-left: 200px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    
+    
   }
 
   .left-title {
-    font-size: 32px;
-    text-align: center;
+    font-size: 36px;
   }
 
   .goat {
-    font-size: 55px;
-    text-align: center;
+    font-size: 60px;
   }
 
   .list1,
@@ -833,7 +851,7 @@ section .p {
 
   .p2 {
     font-size: 14px;
-    width: 250px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
