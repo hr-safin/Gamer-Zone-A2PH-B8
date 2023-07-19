@@ -196,9 +196,8 @@ section .p {
   color: #534c64;
   text-align: center;
   font-family: Work Sans;
-  font-size:15px;
+  font-size: 15px;
   font-weight: 400;
-  
 }
 .card-container {
   display: grid;
@@ -237,6 +236,74 @@ section .p {
   color: #534c64;
   font-size: 14px;
   font-weight: 500;
+}
+
+/* play section */
+
+.play-game {
+  width: 90vw;
+  align-items: center;
+  height: vh;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 40px;
+  padding-top: 60px;
+  
+}
+
+.play-game-content {
+  width: 50%;
+  border: 1px solid brown;
+  margin-left: 100px;
+  text-align: right;
+}
+
+.play-game-image {
+  width: 50%;
+  border: 1px solid brown;
+  position: relative;
+  margin-left: 220px;
+  
+}
+
+.horse-pic{
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  
+}
+
+.doll{
+  width: 230px;
+  position: absolute;
+  top: 260px;
+  right: 330px;
+}
+
+.play-title {
+  
+  font-size: 38px;
+  font-weight: 700;
+  width: 450px;
+  border: 1px solid red;
+  margin-bottom: 15px;
+}
+
+.play-diff{
+  color:#ff42a5;
+}
+
+.p2 {
+  color: #534c64;
+  
+  width: 450px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid red;
+
 }
 
 /* Mobile responsive */
@@ -315,24 +382,64 @@ section .p {
 
   /* online  */
 
-  .card-container{
-     grid-template-columns: 1fr;
-     padding: 30px;
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 30px;
   }
 
-  section .h2{
+  section .h2 {
     font-size: 24px;
   }
 
-  section .p{
-   font-size: 11px;
-  }
-
-  .card p{
+  section .p {
     font-size: 11px;
   }
 
+  .card p {
+    font-size: 11px;
+  }
+  .play-game{
+    flex-direction: column;
+    padding: 30px;
+  }
 
+  .play-game-image{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .play-game-content{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .play-title{
+     font-size: 25px;
+     width: 200px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 25px;
+  }
+
+  .p2{
+    font-size: 12px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .horse-pic{
+    width: 100%;
+  }
+
+  .doll{
+    width: 130px;
+    top: 240px;
+    right: 230px;
+    
+  }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -394,12 +501,58 @@ section .p {
 
   /* online */
 
-  .card-container{
+  .card-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
   }
 
-  .h2{
+  .h2 {
     font-size: 30px;
+  }
+
+
+  .play-game{
+    flex-direction: column;
+    padding: 30px;
+    
+  }
+
+  .play-game-image{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .play-game-content{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .play-title{
+     font-size: 30px;
+     width: 250px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 25px;
+  }
+
+  .p2{
+    font-size: 14px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .horse-pic{
+    width: 80%;
+    margin-left: 66px;
+  }
+
+  .doll{
+    width: 190px;
+    top: 340px;
+    right: 440px;
+    
   }
 }
