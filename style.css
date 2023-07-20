@@ -421,7 +421,7 @@ section .p {
   margin: 0 auto;
 }
 
-.doll {
+.small-pic {
   width: 230px;
   position: absolute;
   top: 260px;
@@ -477,7 +477,7 @@ section .p {
   
 }
 
-.toggle {
+.mini-pic {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -494,22 +494,22 @@ section .p {
   border: 2px solid #ff42a5;
   cursor: pointer;
 }
-.toggle,
-#toggl2 p {
+.mini-pic,
+#mini-2 p {
   color: #ff42a5;
 }
 
-.toggle:hover {
+.mini-pic:hover {
   border: 2px solid #ff42a5;
   cursor: pointer;
 }
 
-.toggle img {
+.mini-pic img {
   width: 40px;
   margin-right: 10px;
 }
 
-.toggle p {
+.mini-pic p {
   color: #0b0223;
   font-size: 13px;
   font-weight: 600;
@@ -590,7 +590,7 @@ section .p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.copy-write {
+.brand-copy {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-family: Work Sans;
@@ -735,7 +735,7 @@ section .p {
     width: 100%;
   }
 
-  .doll {
+  .small-pic {
     width: 130px;
     top: 210px;
     right: 220px;
@@ -745,7 +745,7 @@ section .p {
     padding: 10px;
   }
 
-  .toggle {
+  .mini-pic {
     padding: 2px;
   }
 
@@ -757,7 +757,7 @@ section .p {
     gap: 5px;
   }
 
-  .toggle {
+  .mini-pic {
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 3px;
@@ -766,11 +766,11 @@ section .p {
     margin-right: 0px;
   }
 
-  .toggle p {
+  .mini-pic p {
     font-size: 9px;
   }
 
-  .toggle img {
+  .mini-pic img {
     width: 30px;
     object-fit: cover;
     margin-right: 4px;
@@ -824,7 +824,7 @@ section .p {
    padding-right: 35px;
   }
 
-  .copy-write {
+  .brand-copy {
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
     font-size: 12px;
@@ -962,7 +962,7 @@ section .p {
     margin-left: 66px;
   }
 
-  .doll {
+  .small-pic {
     width: 190px;
     top: 340px;
     right: 440px;
@@ -981,7 +981,7 @@ section .p {
     align-items: center;
   }
 
-  .toggle {
+  .mini-pic {
     width: auto;
   }
 
